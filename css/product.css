@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(0deg,#fff  0%, #f5f5f5 50%, #fff 100%);
+  color: #393939;
+  font-family: "Myriad Pro", Arial, "FZLanTingHei-R-GBK", 方正兰亭黑, "Microsoft YaHei", 微软雅黑, STHeiti, 华文黑体, SimSun, 宋体, sans-serif;
+  line-height: normal;
+  overflow-x: hidden;
+  margin-bottom: 200px;
+}
+
+/*头部开始*/
+#header {
+  width: 100%;
+  background: rgb(0, 155, 114);
+  height: 2.5em;
+}
+
+#header a {
+  display: block;
+  padding: 9px 20px 9px;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 0.8125rem;
+}
+
+#header a:hover {
+  background: rgb(71, 180, 136);
+}
+
+#header ul li {
+  border-left: 1px solid #47b488;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#header ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*头部结束*/
+/*广告样式开始*/
+#ad {
+  width: 100%;
+  background: rgb(233, 104, 100);
+  height: 2.5em;
+  color: #fff;
+  padding: 7px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#ad span {
+  color: #fff;
+  font-size: 2em;
+  right: 2%;
+  top: -5px;
+  opacity: 1;
+}
+
+/*广告样式结束*/
+/*导航样式开始*/
+#nav {
+  height: 6em;
+  line-height: 6em;
+  background: #F6F6F6;
+}
+
+#nav ul li a {
+  text-decoration: none;
+}
+
+#nav ul li a span {
+  color: #7B7B7B;
+  font-size: 15px;
+  padding: 0 0 3px 0;
+  transition: color 300ms linear;
+
+}
+
+#nav ul li a span:hover {
+  border-bottom: 3px solid #2AAD6F;
+  color: #b00;
+}
+
+#nav ul li {
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+#nav ul {
+  margin: 0;
+  width: auto;
+}
+
+/*导航样式结束*/
+
+/*页面尾部样式开始*/
+#footer {
+  width: 100%;
+  margin-top: 5em;
+
+}
+
+#footer .special > li {
+  width: 23%;
+}
+
+#footer .special > li > a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #363636;
+}
+
+#footer .special > li > ul > li > a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #363636;
+}
+
+#footer .number p:first-child {
+  font-size: 2.875rem;
+}
+
+#footer .number p:last-child {
+
+  padding: 0 0 10px 0;
+}
+
+#footer hr {
+  border: 1px solid #cfcfcf;
+}
+
+#footer .bgpic a span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+#footer .bgpic a b {
+  display: inline-block;
+  width: 46px;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 0;
+  vertical-align: top;
+  transition: height .3s linear;
+
+}
+
+#footer .bgpic > span {
+  float: left;
+  margin: 15px 10px 0 0;
+  color: #7B7B7B;
+}
+
+/*悬停之前的效果*//*背景下来效果*/
+/*第一组开始*/
+#footer .bgpic a:nth-child(2) span {
+  background: url("../images/icon01.png") -50px -100px;
+}
+
+#footer .bgpic a:nth-child(2) b {
+  background: url("../images/icon01.png") -50px -150px;
+}
+
+#footer .bgpic a:nth-child(2) span:hover b {
+  height: 46px;
+}
+
+/*第一组结束*/
+/*第二组开始*/
+#footer .bgpic a:nth-child(3) span {
+  background: url("../images/icon01.png") 0 -100px;
+}
+
+#footer .bgpic a:nth-child(3) b {
+  background: url("../images/icon01.png") 0 -150px;
+}
+
+#footer .bgpic a:nth-child(3) span:hover b {
+  height: 46px;
+}
+
+#footer .bgpic a:nth-child(3) span:hover div {
+  display: block;
+}
+
+#footer .popover {
+  text-align: center;
+  position: absolute;
+  top: -235px;
+  left: 85px;
+}
+
+#footer .popover2 {
+  text-align: center;
+  position: absolute;
+  top: -265px;
+  left: 135px;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  line-height: 1.42857143;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #fff;
+}
+
+#footer .popover h4 {
+  color: #0EC60E;
+}
+
+#footer .popover2 h4 {
+  color: #38B0EC;
+}
+
+#footer .popover2 h5 {
+  color: #7B7B7B;
+}
+
+/*第二组结束*/
+/*第三组开始*/
+#footer .bgpic a:nth-child(4) span {
+  background: url("../images/icon01.png") -100px -100px;
+}
+
+#footer .bgpic a:nth-child(4) b {
+  background: url("../images/icon01.png") -100px -150px;
+}
+
+#footer .bgpic a:nth-child(4) span:hover b {
+  height: 46px;
+}
+
+#footer .bgpic a:nth-child(4) span:hover div {
+  display: block;
+}
+
+/*第三组结束*/
+
+#footer .bgpic_2 > p {
+  color: #7B7B7B;
+  margin-top: 1.5em;
+}
+
+/*页面尾部样式结束*/
+
+/*产品页面主体开始*/
+#main .breadcrumb{
+  background: #fff;
+}
+#main{
+  width: 100%;
+}
+#main .pro1{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .pro2{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .pro3{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*transition过渡：某种样式属性（数值）在一段时间内缓慢变化*/
+#main .scale a img:first-child{
+  transition: transform 0.3s linear;
+}
+#main .scale{
+  overflow: hidden;
+  padding-right: 0;
+}
+/*transform：转换（变形：放大、移动、旋转、skew）*/
+#main .scale:hover a img:first-child{
+  transform: scale(1.05);
+}
+#main .title{
+  background: url("../images/title-bg.png") no-repeat 0 5px;
+  text-align: center;
+  font-size: 2.4375rem;
+  height: 30px;
+}
+
+#main .R_phone{
+  margin:10px;
+}
+#main .R_phone span{
+  color:  #787878;
+}
+#main .caption p{
+  color: #787878;
+  }
+#main .thumbnail{
+  padding:30px 60px 0 60px;
+  margin-top: 40px;
+  border: 0;
+  }
+
+#main .thumbnail .caption{
+  padding:30px 0 0 0;
+  }
+#main .toUp{
+  position: relative;
+  top: 0;
+  transition:top 0.3s linear ;
+}
+#main .toUp:hover{
+  top: -5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow:0 5px 5px 5px #ECECEC;
+}
+
+#main .tese{
+  margin: 30px 0;
+}
+#main .text-center a{
+  text-decoration: none;
+}
+
+/*产品页面主体结束*/
+.navbar {
+  display: none;
+}
+/************************PAD屏幕专用样式************************/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  #ad span {
+    color: #fff;
+    font-size: 2em;
+    right: 2%;
+    top: -5px;
+    opacity: 1;
+  }
+  #ad p {
+    font-size: 1em;
+  }
+
+  #footer .number p:first-child{
+    font-size: 2.5rem;
+  }
+  #main .tese div:last-child img{
+    margin-left:0;
+  }
+  .navbar {
+    display: none;
+  }
+}
+/************************PHONE屏幕专用样式************************/
+@media screen and (max-width: 767px) {
+  #header {
+    display: none;
+  }
+  #ad{
+    display: none;
+  }
+  #nav {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    opacity: .9;
+  }
+  #footer .xs_out{
+    display: none;
+  }
+  #footer .number p:first-child{
+    font-size: 2rem;
+  }
+  #main .tese div:last-child img{
+    margin-left:0;
+    margin-top:8px;
+  }
+  #main{
+    padding-top: 5em;
+  }
+  .dropdown-menu > li > a {
+    color: #008B56;
+    text-align: center;
+  }
+  .navbar-header a {
+    border: none;
+  }
+  .navbar-header a span {
+    font-size: 2em;
+  }
+  .navbar .navbar2 img {
+    position: relative;
+    left: 1em;
+  }
+}

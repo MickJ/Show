@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>oppo官网</title>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/R9sBlack.css"/>
+</head>
+<body>
+
+<!--模态框开始-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="login-form">  <!--.container-->
+                    <div class="form-group">   <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="uname">用户名：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="text" id="uname" placeholder="请输入用户名" name="uname"
+                                   value="wangjiabao"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">用户名可以包含数字、字母</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">  <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="upwd">密 码：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="password" id="upwd" placeholder="请输入您的密码" name="upwd"
+                                   value="123"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">密码长度在6~12位之间</span>
+                        </div>
+                    </div>
+                    <!--单责任原则：不要让一个DIV做所有的事情-->
+                    <div class="form-group">    <!--.row-->
+                        <div class="col-xs-10 col-xs-offset-2">
+                            <!--注意此处复选框/单选框的写法-->
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">七天之内不再登录
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="bt-login">提交</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模态框结束-->
+<!--页面头部开始-->
+<div id="pageStart">
+</div>
+
+<!--页面导航结束Phone版-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--*******************Right***********************-->
+            <a class="navbar-toggle" data-toggle="dropdown" href="#intel-menu1">
+                <span class="glyphicon glyphicon-user text-success"></span>
+            </a>
+            <ul class="dropdown-menu pull-right" id="inter-menu1">
+                <li><a href="#">我的订单</a></li>
+                <li class="divider"></li>
+                <li><a href="#">配送地址</a></li>
+                <li class="divider"></li>
+                <li><a href="#">优惠券</a></li>
+                <li class="divider"></li>
+                <li><a href="#">账户信息</a></li>
+                <li class="divider"></li>
+                <li><a href="#">购物车</a></li>
+                <li class="divider"></li>
+                <li><a class="btn" data-toggle="modal" data-target="#myModal" style="border:none">登录</a></li>
+            </ul>
+            <!--*******************Left***********************-->
+
+            <div>
+                <a class="navbar-brand navbar-toggle pull-left" data-toggle="dropdown" href="#intel-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="dropdown-menu list-inline" id="inter-menu">
+                    <li><a href="#">首页</a></li>
+                    <li class="divider"></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">品牌</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商城</a></li>
+                </ul>
+            </div>
+            <!--*******************Logo***********************-->
+            <a class="navbar-brand navbar2" href="#">
+                <span class="logo text-success"><img src="images/logo.png" class="img-responsive"/></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--页面导航结束Phone版-->
+<!--路径导航开始-->
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="product.html">商品列表</a></li>
+        <li class="active">R9s 黑色版 11月11日0点开售</li>
+    </ul>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/R9smini1m.png" class="img-responsive" id="mImg"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="list-unstyled list-inline cutPic">
+                        <li><img src="images/R9smini1.png" class="img-responsive"/></li>
+                        <li><img src="images/R9smini2.png" class="img-responsive"/></li>
+                        <li><img src="images/R9smini3.png" class="img-responsive"/></li>
+                        <li><img src="images/R9smini4.png" class="img-responsive"/></li>
+                        <li><img src="images/R9smini5.png" class="img-responsive"/></li>
+                        <li><img src="images/R9smini6.png" class="img-responsive"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="thumbnail headParent">
+                        <div class="caption head">
+                            <h4>R9s 黑色版 11月11日0点开售</h4>
+
+                            <p>O元预约专享大礼包，购R9s送蓝牙音箱+蓝牙耳机+手机壳！</p>
+                            <a class="text-danger">￥2799.00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-unstyled heightLine">
+                        <li>
+                            <ul class="list-inline list-unstyled douClick">
+                                <li>
+                                    <span>颜色</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="gload">
+                                        金色
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gload">
+                                        玫瑰金
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gload">
+                                        黑色
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-inline list-unstyled douClick">
+                                        <li>
+                                            <span>网络</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="gload">
+                                                网通
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-inline list-unstyled douClick">
+                                        <li>
+                                            <span>容量</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="gload">
+                                                64G
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-inline list-unstyled douClick"
+                                        style="border-top: 1px dashed #b6b6b6">
+                                        <li>
+                                            <span>赠品</span>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="images/small01.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <a href="#">OPPO自拍杆</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="gload">
+                                                晴空蓝
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-inline list-unstyled douClick">
+                                        <li>
+                                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="images/small02.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <a href="#">蓝牙耳机Q13</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="gload">
+                                                亮白色
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled" style="border-top: 1px dashed #b6b6b6; margin-top:2em;">
+                                <li>
+                                    <ul class="list-inline list-unstyled douClick" style="margin-top: 5px">
+                                        <li>
+                                            <span>分期</span>
+                                        </li>
+                                        <li>
+                                            <span class="bg-success order">订单满600可使用花呗分期3/6期免息 </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="know">了解详情>></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="text-center">
+                                    <button class="btn btn-danger btn-lg quick" id="qukLink">立即预约</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Code">
+    <div class="container number">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="center-block modal2">
+                    <div class="form-group has-feedback has-success" style="margin-left: 30%">
+                        <label class="control-label" for="number">请输入您的手机号：</label>
+                        <input type="text" class="form-control" id="number"/>
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback has-success" style="margin-left: 30%">
+                        <label class="control-label" for="vcode">请输入验证码：</label>
+                        <input type="text" class="form-control" id="vcode"/><img src="data/vcode.php" class="img-responsive" style="margin-top:2em"/>
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <a class="btn btn-success pull-right off" style="width: 20%;">取消</a>
+                    <a href="shoppingcar.html" id="finish" class="btn btn-success pull-right off" style="width: 20%;margin-right: 5px">提交</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container Big">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#tc1">规格参数</a></li>
+        <li><a data-toggle="tab" href="#tc2">用户评价</a></li>
+    </ul>
+</div>
+<div id="Big" style="background: #0D0D0D">
+    <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tc1">
+                <img src="images/big01.jpg" class="img-responsive center-block"/>
+                <img src="images/big02.jpg" class="img-responsive center-block"/>
+                <img src="images/big03.jpg" class="img-responsive center-block"/>
+                <img src="images/big04.jpg" class="img-responsive center-block"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--路径导航结束-->
+<div id="pageEnd">
+</div>
+<!--页面导航结束PC版-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/R9sBlack.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/R9_detail.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/oppo.sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/images/birds.mp4" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/R9_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/R9sBlack.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/product.js" charset="UTF-8" />
+  </component>
+</project>

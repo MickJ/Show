@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>用户注册 — OPPO官网</title>
+    <script src="js/angular.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body ng-controller="myCtrl">
+<!--页头-->
+<div class="headerRegister">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="index.html"><img class="logo img-responsive" src="images/logo.png"></a>
+            </div>
+            <div class="col-md-4 col-sm-5 col-xs-9">
+                <b class="welcome text-justify">欢迎注册</b>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="mainRegister">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <video src="images/birds.mp4" autoplay loop muted class="img-responsive vid"
+                       style="width: 100%;">您的浏览器不支持H5新特性
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页尾-->
+<div class="footerRegister">
+    <!--*************************************************-->
+    <form class="form-horizontal">  <!--.container-->
+        <div class="form-group">   <!--.row-->
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label" for="uname">用户名：</label>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <!--搜索建议功能-->
+                <datalist id="uname">
+                    <option>wangjiabao</option>
+                    <option>honghong</option>
+                </datalist>
+                <input class="form-control" type="text" list="uname" autofocus required/>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <span class="help-block">用户名可以包含数字、字母</span>
+            </div>
+        </div>
+
+        <div class="form-group">  <!--.row-->
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label" for="upwd">密码：</label>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <input class="form-control" type="password" id="upwd" required/>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <span class="help-block">密码长度在6~12位之间</span>
+            </div>
+        </div>
+
+
+        <div class="form-group">  <!--.row-->
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label" for="email">邮箱：</label>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <input class="form-control" type="email" id="email" name="email" required/>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <span class="help-block">请输入合法的邮箱格式</span>
+            </div>
+        </div>
+
+        <div class="form-group">  <!--.row-->
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label" for="homepage">个人主页：</label>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <input class="form-control" type="url" id="homepage" name="homepage" required minlength="6" maxlength="10"/>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <span class="help-block">个人主页必须符合URL格式</span>
+            </div>
+        </div>
+
+        <div class="form-group">  <!--.row-->
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label" for="birthday">出生日期：</label>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <input class="form-control" type="date" name="birthday" id="birthday" required/>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <span class="help-block">请选择生日</span>
+            </div>
+        </div>
+        <!--单责任原则：不要让一个DIV做所有的事情-->
+        <div class="form-group">    <!--.row-->
+            <div class="col-xs-10 col-md-offset-2 col-sm-offset-3">
+                <!--注意此处复选框/单选框的写法-->
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="isAgree">是否同意本站协议
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">  <!--.row-->
+            <div class="col-xs-10 col-md-offset-2 col-xs-offset-3">
+                <input class="btn btn-success" type="submit" value="注册" ng-disabled="!isAgree"/>
+                <input class="btn btn-danger" type="button" value="取消"/>
+            </div>
+        </div>
+    </form>
+    <!--*************************************************-->
+</div>
+
+
+<div id="pageEnd"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    $("#pageEnd").load("data/footer.php");
+    //*******************声明模块****************
+    var app = angular.module('myApp', ['ng']);
+    //*******************声明控制台**************
+    app.controller('myCtrl', function ($scope) {
+
+    });
+</script>
+</body>
+</html>

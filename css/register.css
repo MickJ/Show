@@ -1,0 +1,63 @@
+body {
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: #666;
+}
+.headerRegister .container {
+  padding: 1em 0;
+}
+.vid {
+  position: absolute;
+  z-index: -1;
+}
+.welcome {
+  line-height: 60px;
+  font-size: 2em;
+  border-left: 2px solid #aaa;
+  padding-left: 1em;
+  margin-left: 1em;
+  letter-spacing: .8em;
+}
+.logo {
+  margin: 18px 0 0 34px;
+}
+.footerRegister{
+  height: 600px;
+}
+.form-horizontal{
+  background: rgba(255, 255, 255, .8);
+  padding: 2em;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 30%;
+}
+/*PAD下的媒体查询*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form-horizontal{
+    width: 70%;
+  }
+  .footerRegister{
+    height: 400px;
+  }
+}
+/*PHONE下的媒体查询*/
+@media screen and (max-width: 767px) {
+  .form-horizontal{
+    width: 100%;
+  }
+  .footerRegister{
+    height: 600px;
+  }
+  .vid{
+    display: none;
+  }
+  .welcome {
+    line-height: 40px;
+  }
+  .logo {
+    margin: 13px 0 0 30px;
+  }
+  .form-horizontal{
+    background: linear-gradient(150deg, #52E0E0 0%, #52E0E0 25%, #65B8E0 50%, #52E0E0 75%, #6CAAE0 100%);;
+    border-radius: 0;
+  }
+}

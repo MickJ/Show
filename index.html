@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>oppo官网</title>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--H5新标签音频播放-->
+<audio src="images/yearMusic.mp3" autoplay loop></audio>
+<!--模态框开始-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="login-form">  <!--.container-->
+                    <div class="form-group">   <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="uname">用户名：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="text" id="uname" placeholder="请输入用户名" name="uname"
+                                   value="fengxi"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">用户名可以包含数字、字母</span>
+                        </div>
+                    </div>
+                    <div class="form-group">  <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="upwd">密 码：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="password" id="upwd" placeholder="请输入您的密码" name="upwd"
+                                   value="123"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">密码长度在6~12位之间</span>
+                        </div>
+                    </div>
+                    <!--单责任原则：不要让一个DIV做所有的事情-->
+                    <div class="form-group">    <!--.row-->
+                        <div class="col-xs-10 col-xs-offset-2">
+                            <!--注意此处复选框/单选框的写法-->
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">七天之内不再登录
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="bt-login">登录</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模态框结束-->
+<!--页面头部开始-->
+<div id="pageStart">
+</div>
+<!--页面导航结束PC版-->
+
+<!--页面导航结束Phone版-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--*******************Right***********************-->
+            <a class="navbar-toggle" data-toggle="dropdown" href="#intel-menu1">
+                <span class="glyphicon glyphicon-user text-success"></span>
+            </a>
+            <ul class="dropdown-menu pull-right" id="inter-menu1">
+                <li><a href="#">我的订单</a></li>
+                <li class="divider"></li>
+                <li><a href="#">配送地址</a></li>
+                <li class="divider"></li>
+                <li><a href="#">优惠券</a></li>
+                <li class="divider"></li>
+                <li><a href="#">账户信息</a></li>
+                <li class="divider"></li>
+                <li><a href="#">购物车</a></li>
+                <li class="divider"></li>
+                <li><a class="btn" data-toggle="modal" data-target="#myModal" style="border:none">登录</a></li>
+            </ul>
+            <!--*******************Left***********************-->
+
+            <div>
+                <a class="navbar-brand navbar-toggle pull-left" data-toggle="dropdown" href="#intel-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="dropdown-menu list-inline" id="inter-menu">
+                    <li><a href="#">首页</a></li>
+                    <li class="divider"></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">品牌</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商城</a></li>
+                </ul>
+            </div>
+            <!--*******************Logo***********************-->
+            <a class="navbar-brand navbar2" href="#">
+                <span class="logo text-success"><img src="images/logo.png" class="img-responsive"/></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--页面导航结束Phone版-->
+<!--页面主体内容开始-->
+<div id="main">
+    <!--1.广告轮播开始-->
+    <table></table>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/banner1.jpg">
+            </div>
+            <div class="item">
+                <img src="images/banner2.jpg">
+            </div>
+            <div class="item">
+                <img src="images/banner3.jpg">
+            </div>
+            <div class="item">
+                <img src="images/banner4.jpg">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--1.广告轮播结束-->
+    <!--2.广告图片开始-->
+    <div id="ad_pic" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <a href="R9_detail.html"><img class="img-responsive " src="images/ad_pic01.jpg" alt=""/></a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <a href="R9_detail.html"><img class="img-responsive " src="images/ad_pic02.jpg" alt=""/></a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <a href="R9_detail.html"><img class="img-responsive " src="images/ad_pic03.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <!--2.广告图片结束-->
+</div>
+<!--页面主体内容结束-->
+<!--页面结尾内容开始-->
+<div id="pageEnd">
+
+</div>
+<!--页面结尾内容结束-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

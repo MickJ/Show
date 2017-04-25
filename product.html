@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[oppo智能手机大全]</title>
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+</head>
+<body ng-controller="myCtrl">
+<!--模态框开始-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">  <!--.container-->
+                    <div class="form-group">   <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="uname">用户名：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="text" id="uname" placeholder="请输入用户名"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">用户名可以包含数字、字母</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">  <!--.row-->
+                        <div class="col-xs-2">
+                            <label class="control-label" for="upwd">密 码：</label>
+                        </div>
+                        <div class="col-xs-5">
+                            <input class="form-control" type="password" id="upwd" placeholder="请输入您的密码"/>
+                        </div>
+                        <div class="col-xs-5">
+                            <span class="help-block">密码长度在6~12位之间</span>
+                        </div>
+                    </div>
+                    <!--单责任原则：不要让一个DIV做所有的事情-->
+                    <div class="form-group">    <!--.row-->
+                        <div class="col-xs-10 col-xs-offset-2">
+                            <!--注意此处复选框/单选框的写法-->
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">七天之内不再登录
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">提交</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模态框结束-->
+<!--引入网页头部header  PHP文件-->
+<div id="pageStart"></div>
+<!--引入网页头部header  PHP文件-->
+<!--页面导航结束Phone版-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--*******************Right***********************-->
+            <a class="navbar-toggle" data-toggle="dropdown" href="#intel-menu1">
+                <span class="glyphicon glyphicon-user text-success"></span>
+            </a>
+            <ul class="dropdown-menu pull-right" id="inter-menu1">
+                <li><a href="#">我的订单</a></li>
+                <li class="divider"></li>
+                <li><a href="#">配送地址</a></li>
+                <li class="divider"></li>
+                <li><a href="#">优惠券</a></li>
+                <li class="divider"></li>
+                <li><a href="#">账户信息</a></li>
+                <li class="divider"></li>
+                <li><a href="#">购物车</a></li>
+                <li class="divider"></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+            <!--*******************Left***********************-->
+
+            <div>
+                <a class="navbar-brand navbar-toggle pull-left" data-toggle="dropdown" href="#intel-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="dropdown-menu list-inline" id="inter-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="divider"></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">品牌</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商城</a></li>
+                </ul>
+            </div>
+            <!--*******************Logo***********************-->
+            <a class="navbar-brand navbar2" href="#">
+                <span class="logo text-success"><img src="images/logo.png" class="img-responsive"/></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--页面导航结束Phone版-->
+
+
+<!--页面主体内容-->
+<div id="main">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">首页</a></li>
+            <li class="active">产品</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 scale">
+                        <a href="R9_detail.html" id="R9Link">
+                            <img ng-src="{{product[0]}}" class="img-responsive"/>
+                            <img ng-src="{{product[1]}}" class="pro1 img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 scale">
+                        <a href="#">
+                            <img ng-src="{{product[2]}}" class="img-responsive scale"/>
+                            <img ng-src="{{product[3]}}" class="pro2 img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 scale">
+                <a href="#">
+                    <img ng-src="{{product[4]}}" class="img-responsive scale"/>
+                    <img ng-src="{{product[5]}}" class="pro3 img-responsive"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">OPPO产品系列</div>
+            </div>
+        </div>
+
+        <!--**************************R系列 纤薄设计-至美外观********************************-->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="R_phone">R系列 <span>纤薄设计-至美外观</span></h4>
+                <a class="btn btn-default pull-right" ng-click="add1()">点击加载更多</a>
+            </div>
+        </div>
+        <div class="row text-center onload">
+            <!--通过 angularJS的 ng-repeat实现自动遍历生成图片列表-->
+            <div class="col-xs-12 col-sm-4 col-md-3 toUp" ng-repeat="obj in RimagesList">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img ng-src="{{obj.imgurl}}"/>
+
+                        <div class="caption">
+                            <h4>{{obj.proName}}</h4>
+
+                            <p>{{obj.say}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--**************************A系列 潮流设计 至美外观********************************-->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="R_phone">A系列 <span>潮流设计-至美外观</span></h4>
+                <a class="btn btn-default pull-right" ng-click="add2()">点击加载更多</a>
+            </div>
+        </div>
+        <div class="row text-center onload2">
+            <div class="col-xs-12 col-sm-4 col-md-3 toUp" ng-repeat="obj in AimagesList">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img ng-src="{{obj.imgurl}}"/>
+                        <div class="caption">
+                            <h4>{{obj.proName}}</h4>
+                            <p>{{obj.say}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--**************************Find系列 先进科技 智能旗舰********************************-->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="R_phone">Find系列 <span>先进科技-智能旗舰</span></h4>
+                <a class="btn btn-default pull-right" ng-click="add3()">点击加载更多</a>
+            </div>
+        </div>
+        <div class="row text-center onload3">
+            <div class="col-xs-12 col-sm-4 col-md-3 toUp" ng-repeat="obj in FindimagesList">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img ng-src="{{obj.imgurl}}"/>
+
+                        <div class="caption">
+                            <h4>{{obj.proName}}</h4>
+
+                            <p>{{obj.say}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--**************************N系列 旋转镜头 创意拍摄********************************-->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="R_phone">N系列 <span>旋转镜头-创意拍摄</span></h4>
+                <a class="btn btn-default pull-right" ng-click="add4()">点击加载更多</a>
+            </div>
+        </div>
+        <div class="row text-center onload4">
+            <div class="col-xs-12 col-sm-4 col-md-3 toUp" ng-repeat="obj in NimagesList">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img ng-src="{{obj.imgurl}}"/>
+
+                        <div class="caption">
+                            <h4>{{obj.proName}}</h4>
+
+                            <p>{{obj.say}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">OPPO产品特色</div>
+            </div>
+        </div>
+        <div class="row tese">
+            <div class="col-sm-6"><a href="#"><img ng-src="{{NBimagesList[0].imgurl}}" class="img-responsive ani"/></a>
+            </div>
+            <div class="col-sm-6"><a href="#"><img ng-src="{{NBimagesList[1].imgurl}}" class="img-responsive ani"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--引入网页结尾部footer  PHP文件-->
+<div id="pageEnd"></div>
+<!--引入网页结尾部footer  PHP文件-->
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
